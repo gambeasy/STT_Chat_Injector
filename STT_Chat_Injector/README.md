@@ -65,18 +65,63 @@ Unlike risky automated macro spammers, **Speech To Text Chat Injector** strictly
 
 ## 🚀 Quickstart & Installation
 
-### 1. Clone or Download the Repository
-Download the application files into a directory of your choice:
+### Step 1 — Install Python on Windows
+
+1. Open your browser and go to **[https://www.python.org/downloads/](https://www.python.org/downloads/)**
+2. Click **"Download Python 3.x.x"** (the big yellow button — any version 3.10, 3.11, 3.12, or 3.13 works).
+3. Run the downloaded installer (e.g. `python-3.13.x-amd64.exe`).
+4. ⚠️ **IMPORTANT**: On the first screen of the installer, check the box that says:
+   > ✅ **"Add Python to PATH"**  
+   *(This is required — without it, the `python` command won't work in your terminal.)*
+5. Click **"Install Now"** and let it finish.
+6. Verify the install worked by opening **PowerShell** or **Command Prompt** and running:
+   ```powershell
+   python --version
+   ```
+   You should see something like `Python 3.13.x`.
+
+---
+
+### Step 2 — Download the Application Files
+
+**Option A — Download as a ZIP (Easiest)**
+1. Go to the GitHub repository page: **[https://github.com/gambeasy/STT_Chat_Injector](https://github.com/gambeasy/STT_Chat_Injector)**
+2. Click the green **`< > Code`** button near the top right.
+3. Click **"Download ZIP"**.
+4. Once downloaded, right-click the ZIP file and select **"Extract All..."**.
+5. Choose a location (e.g. your Desktop or `~\Documents\STT_Chat_Injector`) and click **"Extract"**.
+
+**Option B — Clone with Git (Advanced)**
+
+If you have [Git for Windows](https://git-scm.com/download/win) installed:
 ```powershell
-cd "Speech-to-text_wow_app"
+git clone https://github.com/gambeasy/STT_Chat_Injector.git
+cd STT_Chat_Injector
 ```
 
-### 2. Run the Application
-Run `STT-CI.py` using Python:
-```powershell
-python STT-CI.py
-```
-> **Automatic Dependency Bootstrap**: On first launch, the app automatically checks for and installs any missing Python libraries (`faster-whisper`, `sounddevice`, `customtkinter`, `pynput`, `pyautogui`, `pyperclip`, `pygame`, `psutil`, `numpy`).
+---
+
+### Step 3 — Run the Application
+
+1. Open **PowerShell** or **Command Prompt**. (WIN+R, open: cmd, click ok)
+2. Navigate into the folder where you extracted the files:
+   ```powershell
+   cd "C:\path\to\STT_Chat_Injector"
+   ```
+   *(Replace the path with wherever you extracted it — e.g. `cd "$env:USERPROFILE\Desktop\STT_Chat_Injector"`)*
+    
+    **OR**
+
+    - In File Explorer navigate to the folder you just extracted.
+    - Right click in the window with the files and select `Open in Terminal`
+
+3. Launch the app:
+   ```powershell
+   python STT-CI.py
+   ```
+4. On the **very first launch**, the app will automatically detect and install all required Python libraries. This may take 1–3 minutes depending on your internet speed. You only need to do this once.
+
+> **Libraries installed automatically:** `faster-whisper`, `sounddevice`, `customtkinter`, `pynput`, `pyautogui`, `pyperclip`, `pygame`, `psutil`, `numpy`
 
 ---
 
