@@ -1,0 +1,54 @@
+{
+    "global_settings": {
+        "device_index": null,
+        "model_size": "base",
+        "compute_device": "cpu"
+    },
+    "active_profile": "World of Warcraft",
+    "app_profiles": {
+        "World of Warcraft": {
+            "name": "World of Warcraft",
+            "target_process": "WowB.exe",
+            "window_title": "World of Warcraft",
+            "overlay": {
+                "enabled": true,
+                "pos_x": 80,
+                "pos_y": 80,
+                "bind_to_window": true
+            },
+            "tos_safe_mode": {
+                "enabled": true,
+                "auto_open_chat": true
+            },
+            "chat_lifecycle": {
+                "open_chat_key": "enter",
+                "send_message_key": "pad_btn_0",
+                "close_chat_mode": "click_away",
+                "close_chat_key": "escape",
+                "click_away": {
+                    "enabled": true,
+                    "target": "center",
+                    "custom_x": 960,
+                    "custom_y": 540,
+                    "mouse_button": "left"
+                }
+            },
+            "bindings": [
+                {
+                    "binding_name": "Say",
+                    "input_id": "pad_axis_lt+pad_btn_6",
+                    "display_name": "Xbox LT / PS L2 (Trigger) + Xbox Back / PS Share",
+                    "prefix": "/say",
+                    "suffix": ""
+                },
+                {
+                    "binding_name": "Party",
+                    "input_id": "f9",
+                    "display_name": "F9",
+                    "prefix": "/p",
+                    "suffix": ""
+                }
+            ]
+        }
+    }
+}
